@@ -15,9 +15,10 @@ const manifest = defineManifest({
       js: ["src/content-script/script.tsx"],
     },
   ],
-  background:{
+  background: {
     service_worker: "src/background/index.ts",
-  }
+  },
+  permissions: ["tabs", "activeTab"],
 });
 
 // https://vitejs.dev/config/
