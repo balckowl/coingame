@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "@extend-chrome/storage": "^1.5.0",
+    "@radix-ui/react-avatar": "^1.1.0",
+    "@radix-ui/react-progress": "^1.1.0",
     "@radix-ui/react-slot": "^1.1.0",
     "@types/chrome": "^0.0.269",
     "class-variance-authority": "^0.7.0",
