@@ -2,7 +2,7 @@ import { createRoot } from 'react-dom/client';
 import { useState } from 'react';
 
 export default function Script() {
-  const [isHovered,setIsHovered] = useState(false);
+  const [isHovered, setIsHovered] = useState<boolean>(false);
 
   return (
     <div 
