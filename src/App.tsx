@@ -6,6 +6,7 @@ import Layout from './components/layouts/layout'
 import Login from './pages/login'
 import Games from './pages/games'
 import NotFound from './pages/404'
+import SignUp from './pages/signup'
 
 function App() {
 
@@ -17,7 +18,8 @@ function App() {
           <Route path="/games" element={<Games />} />
           <Route path="/ranking" element={<Ranking />} />
         </Route>
-        <Route path="/login" element={<Login />}/>
+        <Route path="/signup" element={<SignUp />} />
+        <Route path="/login" element={<Login />} />
         <Route path="/*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
