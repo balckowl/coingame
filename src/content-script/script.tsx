@@ -1,16 +1,27 @@
 import { createRoot } from 'react-dom/client';
+import { useState } from 'react';
 
 export default function Script() {
+  const [isHovered, setIsHovered] = useState<boolean>(false);
+
   return (
-    <div style={{ 
-      backgroundColor: "lightGreen", 
+    <div 
+      onMouseEnter = {() => setIsHovered(true)}
+      onMouseLeave = {() => setIsHovered(false)}
+      style={{ 
+      backgroundColor: "#3178C6",
+      color: "#ffff", 
+      borderRadius: "10px",
       display: "flex", 
       gap: "10px", 
       position: "fixed", 
       bottom: "10px", 
       right: "10px",  
       zIndex: "10000000",
-      padding: "10px"
+      padding: "10px",
+      fontWeight: "600", 
+      opacity: isHovered ? 0.2 : 1,
+      transition: "opacity 0.3s ease",
     }}>
       <div>レベル：500</div>
       <div>コイン枚数：200</div>
